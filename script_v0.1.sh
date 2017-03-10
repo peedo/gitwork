@@ -223,11 +223,11 @@ alertVictorOps
 #sed "s/^[ \t]*//" header.txt | awk '/typedef enum/{flag=1;next}/}Error;/{flag=0}flag' | grep -v ^# | sed 's/,//g' > out.txt
 
 # GIT source
-#cd /home/peedo/gitwork
+#cd to mount popint for gitHub/arm-mbed/?
 
 # IF file exists, then copy
 # ELSE BREAK with exit msg, email
-#cp /home/peedo/arm/mbed-cloud-client/mbed-cloud-client/MbedCloudClient.h .
+#cp /?/MbedCloudClient.h .
 
 #INPUTFILE="MbedCloudClient.h"
 
