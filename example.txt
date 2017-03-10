@@ -1,0 +1,35 @@
+line 1 Error code
+1. Bootstrap failed: [Error] code (58) 
+2. Bootstrap failed: ERROR code 58
+line 2 code (50)
+Error 50
+error (50)
+error 50
+Error (50)
+50
+(50)
+3. Bootstrap failed: [Error] code (50) ConnectBootstrap
+4. Bootstrap failed: [Error] code 50 ConnectBootstrap
+5. Bootstrap failed: [error] code (50) ConnectBootstrap
+6. Bootstrap failed: [error] code 50 ConnectBootstrap
+7. Bootstrap failed: Error code (55) ConnectBootstrap
+8. Bootstrap failed: error code (50) ConnectBootstrap
+9. Bootstrap failed: error code 50 ConnectBootstrap
+Bootstrap failed: err code 50 ConnectBootstrap
+code 50
+code (50)
+10. error code (5)
+11. Bootstrap failed: Error code 60 ConnectBootstrap
+12. Bootstrap failed: [Error] code (60) ConnectBootstrap
+13. failed: Error code 49 junk
+Error code (0)
+14. error code 01
+15. Bootstrap failed: [Error] code (10) something dude
+16. Bootstrap failed: [error] code 25 something dude
+17. Bootstrap failed: ERROR code 25
+18. Bootstrap failed: [error] code 1025 Cowabot dude
+19. Bootstrap failed: error code 1234 theisa 
+Bootstrap failed: error code 227 brissy 
+20. Bootstrap failed: Error code (1234)
+21. Bootstrap failed: Error code (127)
+22. something went wrong ;ERror code 07

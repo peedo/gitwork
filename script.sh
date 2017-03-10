@@ -1,14 +1,18 @@
 #!/bin/bash
 #sed "s/^[ \t]*//" header.txt | awk '/typedef enum/{flag=1;next}/}Error;/{flag=0}flag' | grep -v ^# | sed 's/,//g' > out.txt
 
-INPUTFILE="header.txt"
+cd /home/peedo/gitwork
+
+#cp /home/peedo/arm/mbed-cloud-client/mbed-cloud-client/MbedCloudClient.h .
+
+INPUTFILE="MbedCloudClient.h"
 iDECIMAL=10
 cDECIMAL=48
 uDECIMAL=1024
 
-IDENTITY=($(sed "s/^[ \t]*//" header.txt | grep -E "^Identity[^[:space:]]+" | sed 's/,//g' | awk '{print $1}'))
-CONNECT=($(sed "s/^[ \t]*//" header.txt | grep -E "^Connect[^[:space:]]+" | sed 's/,//g' | awk '{print $1}'))
-UPDATE=($(sed "s/^[ \t]*//" header.txt | grep -E "^Update[^[:space:]]+" | sed 's/,//g' | awk '{print $1}'))
+IDENTITY=($(sed "s/^[ \t]*//" ${INPUTFILE} | grep -E "^Identity[^[:space:]]+" | sed 's/,//g' | awk '{print $1}'))
+CONNECT=($(sed "s/^[ \t]*//" ${INPUTFILE} | grep -E "^Connect[^[:space:]]+" | sed 's/,//g' | awk '{print $1}'))
+UPDATE=($(sed "s/^[ \t]*//" ${INPUTFILE} | grep -E "^Update[^[:space:]]+" | sed 's/,//g' | awk '{print $1}'))
 
 for i in "${IDENTITY[@]}"
 do
@@ -33,11 +37,11 @@ done
 #echo ${UPDATE[*]}
 
 #grep -iE "\[[Ee][Rr][Rr][Oo][Rr]\] code \((4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])\)" example.txt 
-ERRCODE=($(grep -iE "\[[Ee][Rr][Rr][Oo][Rr]\] code \((4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])\) | code \((4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])\) | code (4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])" example.txt))
+##ERRCODE=($(grep -iE "\[[Ee][Rr][Rr][Oo][Rr]\] code \((4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])\) | code \((4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])\) | code (4[89]|[5-9][0-9]|1[0-2][0-9]|13[0-7])" example.txt))
 
-echo "#---#"
-echo $ERRCODE
-echo "#---#"
+#echo "#---#"
+#echo $ERRCODE
+#echo "#---#"
 
 
 #Regex
